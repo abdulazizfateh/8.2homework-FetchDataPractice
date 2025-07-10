@@ -1,0 +1,11 @@
+.header_nav_link.active {
+    color: #00a6f5 !important;
+}
+
+.ant-popover-inner-content a {
+    color: #00a6f5 !important;
+}
+
+.ant-popover-inner-content a {
+    font-size: 14px;
+}

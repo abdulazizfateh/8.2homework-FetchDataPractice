@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8px;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+.link_hover {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: black;
+    transition: color 0.3s;
+}
+
+.link_hover:hover {
+    color: #05a6f4;
+}
+
+.link_hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #05a6f4;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}
+
+.link_hover:hover::after {
+    transform: scaleX(1);
+}
