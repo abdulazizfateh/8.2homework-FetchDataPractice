@@ -41,7 +41,7 @@ const Header = () => {
             </NavLink>
             <div className='sm:hidden flex items-center justify-center'>
               <Space wrap>
-                <Popover content={content} title="Practiced fetching data using different ways" trigger="click" placement="topLeft">
+                <Popover content={content} title="Practiced fetching data using different ways" trigger="click" placement="bottomLeft">
                   <PiInfoThin className='text-xl cursor-pointer' />
                 </Popover>
               </Space>
