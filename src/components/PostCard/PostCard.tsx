@@ -69,7 +69,7 @@ const PostCard = ({ postsData, isLoading }: { postsData: IPost[], isLoading: boo
     const dispatch = useDispatch();
     const postsState = useSelector((state: RootState) => state.postReducer.posts);
     return (
-        <div className='posts_cards grid auto-rows-[222px] sm:auto-rows-[270px] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-2.5'>
+        <div className='posts_cards grid auto-rows-[235px] sm:auto-rows-[290px] grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-2.5'>
             {
                 isLoading ? <LoadingPosts cardsPerPage={20} /> :
                     postsData?.map(item => (
