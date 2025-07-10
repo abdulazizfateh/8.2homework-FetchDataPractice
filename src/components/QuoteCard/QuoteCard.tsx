@@ -13,13 +13,21 @@ const LoadingQuotesCard = ({ cardsPerPage }: { cardsPerPage: number }) => {
                 loadingArray.map((_, index) => (
                     <div key={index} className='p-2.5 rounded-lg bg-gray-50 border border-gray-100 flex flex-col gap-1.5'>
                         <div className='flex flex-col gap-1'>
-                            <div className='w-[96%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[76%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[56%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
+                            <div className='w-[96%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg overflow-hidden relative'>
+                                <div className='absolute shimmer z-10 inset-0'></div>
+                            </div>
+                            <div className='w-[76%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg overflow-hidden relative'>
+                                <div className='absolute shimmer z-10 inset-0'></div>
+                            </div>
+                            <div className='w-[56%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg overflow-hidden relative'>
+                                <div className='absolute shimmer z-10 inset-0'></div>
+                            </div>
                         </div>
                         <div className='flex-1 flex items-end gap-2 justify-between'>
                             <PiBookmarkSimpleThin className='text-xl cursor-pointer shrink-0' />
-                            <div className='w-[45%] h-[14px] sm:h-4 md:w-[30%] bg-[#ecedee] rounded-lg'></div>
+                            <div className='w-[45%] h-[14px] sm:h-4 md:w-[30%] bg-[#ecedee] rounded-lg overflow-hidden relative'>
+                                <div className='absolute shimmer z-10 inset-0'></div>
+                            </div>
                         </div>
                     </div>
                 ))

@@ -11,18 +11,25 @@ const LoadingProducts = ({ cardPerPage }: { cardPerPage: number }) => {
         <>
             {
                 loadingArray.map((_, index) => (
-                    <div key={index} className='border border-gray-100 rounded-lg'>
-                        <div className='h-40 md:h-[246px] bg-gray-50'></div>
-                        <div className='h-[64px]'>
-                            <div className='p-2.5 flex flex-col gap-2'>
-                                <div className='flex items-center justify-between'>
-                                    <div className='w-1/3 md:w-1/4 h-[14px] sm:h-[18px] bg-gray-100 rounded-lg'></div>
-                                    <PiBookmarkSimpleThin className='text-xl cursor-pointer' />
+                    <div key={index} className="border border-gray-100 rounded-lg relative overflow-hidden">
+                        <div className="relative h-40 md:h-[246px] bg-gray-50 overflow-hidden">
+                            <div className="absolute inset-0 shimmer z-10"></div>
+                        </div>
+                        <div className="h-[64px]">
+                            <div className="p-2.5 flex flex-col gap-2">
+                                <div className="flex items-center justify-between">
+                                    <div className="w-1/3 md:w-1/4 h-[14px] sm:h-[18px] bg-[#ecedee] rounded-lg relative overflow-hidden">
+                                        <div className="absolute inset-0 shimmer z-10"></div>
+                                    </div>
+                                    <PiBookmarkSimpleThin className="text-xl cursor-pointer" />
                                 </div>
-                                <div className='w-3/4 md:w-2/4 h-[14px] sm:h-[18px] bg-gray-100 rounded-lg'></div>
+                                <div className="w-3/4 md:w-2/4 h-[14px] sm:h-[18px] bg-[#ecedee] rounded-lg relative overflow-hidden">
+                                    <div className="absolute inset-0 shimmer z-10"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 ))
             }
         </>

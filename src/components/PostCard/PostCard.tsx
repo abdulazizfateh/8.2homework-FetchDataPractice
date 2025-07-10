@@ -14,23 +14,49 @@ const LoadingPosts = ({ cardsPerPage }: { cardsPerPage: number }) => {
                     <div key={index} className='bg-gray-50 border border-gray-100 rounded-lg p-2.5 flex flex-col gap-3.5 sm:gap-4'>
                         <div className='flex items-start justify-between gap-1.5'>
                             <div className='w-full flex flex-col gap-1'>
-                                <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                                <div className='w-[45%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
+                                <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                    <div className="absolute inset-0 shimmer z-10"></div>
+                                </div>
+                                <div className='w-[45%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                    <div className="absolute inset-0 shimmer z-10"></div>
+                                </div>
                             </div>
                             <PiBookmarkSimpleThin className='text-xl cursor-pointer shrink-0' />
                         </div>
                         <div className='w-full flex flex-col gap-1'>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                            <div className='w-[70%] h-3 sm:h-4 bg-[#ecedee] rounded-lg'></div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[96%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
+                            <div className='w-[70%] h-3 sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                <div className="absolute inset-0 shimmer z-10"></div>
+                            </div>
                         </div>
                     </div>
                 ))

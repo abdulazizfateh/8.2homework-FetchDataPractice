@@ -15,8 +15,12 @@ const LoadingComments = ({ cardsPerPage }: { cardsPerPage: number }) => {
                         <div className='flex flex-col gap-1'>
                             <div className='flex items-start justify-between gap-1.5'>
                                 <div className='flex flex-col w-full gap-1 z-20'>
-                                    <div className='w-[96%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                                    <div className='w-2/4 h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
+                                    <div className='w-[96%] h-[14px] sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                        <div className="absolute inset-0 shimmer z-10"></div>
+                                    </div>
+                                    <div className='w-2/4 h-[14px] sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                        <div className="absolute inset-0 shimmer z-10"></div>
+                                    </div>
                                 </div>
                                 <div className='flex items-center gap-[2px]'>
                                     <PiHeartLight className='text-md shrink-0 cursor-pointer' />
@@ -26,8 +30,12 @@ const LoadingComments = ({ cardsPerPage }: { cardsPerPage: number }) => {
                         </div>
                         <div className='flex-1 flex items-end justify-between gap-1.5'>
                             <div className='flex w-full flex-col gap-1'>
-                                <div className='w-3/5 xl:w-2/5 h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
-                                <div className='w-2/4 xl:w-2/6 lg:w-1/3 h-[14px] sm:h-4 bg-[#ecedee] rounded-lg'></div>
+                                <div className='w-3/5 xl:w-2/5 h-[14px] sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                    <div className="absolute inset-0 shimmer z-10"></div>
+                                </div>
+                                <div className='w-2/4 xl:w-2/6 lg:w-1/3 h-[14px] sm:h-4 bg-[#ecedee] rounded-lg relative overflow-hidden'>
+                                    <div className="absolute inset-0 shimmer z-10"></div>
+                                </div>
                             </div>
                             <PiBookmarkSimpleThin className='text-xl cursor-pointer' />
                         </div>

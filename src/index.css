@@ -54,3 +54,19 @@
 .link_hover:hover::after {
     transform: scaleX(1);
 }
+
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.shimmer {
+    background: linear-gradient(to right, transparent, #f5f5f7, transparent);
+    animation: shimmer 1.5s infinite ease-out;
+}
